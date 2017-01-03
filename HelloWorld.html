@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="helloWorld">
+<head>
+    <title>Hello World</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script>
+	var module = angular.module("helloWorld", []);
+	module.controller("myController", function($scope) {
+	     $scope.world = "World";
+		 $scope.svet = "Svet";
+		 $scope.vesmir = "Vesmir";
+	});
+    </script>
+</head>
+<body ng-controller="myController">
+    <h1>Hello <nowiki>{{ world }}</nowiki></h1>
+	<h2>Hello <nowiki>{{ svet }}</nowiki></h2>
+	<h2>Hello <nowiki>{{ vesmir }}</nowiki></h2>
+</body>
+</html>
